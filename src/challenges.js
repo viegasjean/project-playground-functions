@@ -22,7 +22,7 @@ function splitSentence(srt) {
 // Desafio 4
 function concatName(arrStr) {
   // seu código aqui
-  return arrStr[arrStr.length -1] + arrStr[0]
+  return arrStr[arrStr.length -1] + ', ' +arrStr[0]
 }
 
 // Desafio 5
