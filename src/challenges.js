@@ -1,11 +1,10 @@
 // Desafio 1
 function compareTrue(val1, val2) {
   // seu código aqui
-  if(val1 == true && val2 == true){
+  if (val1 && val2){
     return true
-  } else {
-    return false
-  }
+  } 
+  return false
 }
 
 // Desafio 2
@@ -27,23 +26,40 @@ function concatName(arrStr) {
 }
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
   // seu código aqui
+  return wins * 3 + ties
 }
 
 // Desafio 6
-function highestCount() {
+function highestCount(arrNumbers) {
   // seu código aqui
+
 }
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
+
+  
   // seu código aqui
 }
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(arrFizzBuzz) {
   // seu código aqui
+  let arrRetorno = []
+  for (let n of arrFizzBuzz){
+    if (n % 3 === 0){
+      arrRetorno.push("fizz")
+    } else if (n % 5 === 0){
+      arrRetorno.push("buzz")
+    } else if (n % 5 === 0 && n % 3 === 0){
+      arrRetorno.push("fizzBuzz")
+    } else {
+      arrRetorno.push("bug!")
+    }
+  }
+  return arrRetorno
 }
 
 // Desafio 9
