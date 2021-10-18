@@ -1,22 +1,29 @@
 // Desafio 1
-function compareTrue() {
+function compareTrue(val1, val2) {
   // seu código aqui
-  //
+  if(val1 == true && val2 == true){
+    return true
+  } else {
+    return false
+  }
 }
 
 // Desafio 2
-function calcArea() {
+function calcArea(base, height) {
   // seu código aqui
+  return (base * height) / 2
 }
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(srt) {
   // seu código aqui
+  return srt.split(' ')
 }
 
 // Desafio 4
-function concatName() {
+function concatName(arrStr) {
   // seu código aqui
+  return arrStr[arrStr.length -1] + arrStr[0]
 }
 
 // Desafio 5
