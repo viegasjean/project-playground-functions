@@ -46,13 +46,35 @@ function generatePhoneNumber(n) {
 }
 
 // Desafio 12
-function triangleCheck() {
+function triangleCheck(a, b, c) {
   // seu código aqui
+  let somaBC = b + c
+
+  let difBC = Math.abs(b - c)
+
+  valid = false;
+
+  if (a < somaBC && a > difBC){
+    valid =true
+  }
+
+  return valid
+
+
 }
 
 // Desafio 13
-function hydrate() {
+function hydrate(s) {
   // seu código aqui
+  let numbers = s.match(/\d+/g).map(Number)
+  let water = 0
+  for (number of numbers){
+    water += number
+  }
+  if (water == 1 ){
+    return water + ' copo de água'  
+  }
+  return water + ' copos de água'
 }
 
 module.exports = {
